@@ -5,7 +5,6 @@ image:
   multus:
     repository: nfvpe/multus
     pullPolicy: Always
-    tag: stable
   cni:
     repository: gmehta3/cni-plugin
     tag: v0.8.7

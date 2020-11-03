@@ -27,7 +27,7 @@ spec:
           mountPath: /opt/cni/bin    
       containers:
       - name: kube-multus
-        image: {{ .Values.image.multus.repository -}}:{{- .Values.image.multus.tag }}
+        image: {{ .Values.image.multus.repository -}}:{{- .Chart.AppVersion }}
         command: ["/entrypoint.sh"]
         args:
         - "--multus-conf-file=auto"

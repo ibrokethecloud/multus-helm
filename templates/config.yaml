@@ -2,7 +2,6 @@ kind: ConfigMap
 apiVersion: v1
 metadata:
   name: {{ template "multus.name" . }}-config
-  namespace: kube-system
   labels: {{- include "multus.labels" . | nindent 4 }}
 data:
   # NOTE: If you'd prefer to manually apply a configuration file, you may create one here.
